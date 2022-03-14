@@ -180,6 +180,20 @@ arr.forEach(i => {
 
 console.log(dias)
 
+// 9)
+
+function curr(a){
+    return function(b){
+        return a*b
+    }
+}
+console.log(curr(5)(6))
+
+function curr2(a){
+    return a*5
+}
+
+console.log(curr2(5));
 
 
 // 10)
