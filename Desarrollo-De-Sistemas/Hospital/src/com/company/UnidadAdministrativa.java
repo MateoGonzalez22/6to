@@ -4,27 +4,24 @@ import java.util.ArrayList;
 
 public class UnidadAdministrativa extends Base{
 
-    private ArrayList<BaseSimple> basesSimples;
+    private ArrayList<Base> bases;
 
-    public ArrayList<BaseSimple> getBasesSimples() {
-        return basesSimples;
+    public ArrayList<Base> getBases() {
+        return bases;
     }
 
-    public void setBases(ArrayList<BaseSimple> basesSimples) {
-        this.basesSimples = basesSimples;
+    public void setBases(ArrayList<Base> bases) {
+        this.bases = bases;
     }
 
-    public UnidadAdministrativa(String nombre, ArrayList<BaseSimple> basesSimples) {
+    public UnidadAdministrativa(String nombre) {
         super(nombre);
-        this.basesSimples = basesSimples;
+        this.bases = new ArrayList<>();
     }
 
     public int calcularCantidadAmbulancias(){
         int cantidadAmbulancias = 0;
 
-        for (BaseSimple base : basesSimples) {
-            cantidadAmbulancias += base.getCantidadDeAmbulancias();
-        }
 
         return cantidadAmbulancias;
     }
@@ -35,8 +32,9 @@ public class UnidadAdministrativa extends Base{
         float tiempo = 0;
         int i = 0;
 
-        for (BaseSimple base : basesSimples) {
-            tiempo += base.getTiempoMedioAsistencia();
+        for (Base base : bases) {
+            System.out.println(base.getClass());
+
             i++;
         }
 
