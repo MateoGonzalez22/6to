@@ -1,0 +1,45 @@
+image: node:16
+
+pipelines:
+
+  pull-requests:
+
+  "{master,development}":
+
+    - step:
+
+name: Test the commit
+
+script:
+
+- npm i
+
+- COMMIT_HASH=${BITBUCKET_COMMIT} npm run test
+
+branches:
+
+"{master,development}":
+
+- step:
+
+name: Build with corresponding tag
+
+script:
+
+- IMAGE_NAME=ramita0/testcicd:${BITBUCKET_BRANCH}
+
+- docker build . --file Dockerfile --tag ${IMAGE_NAME}
+
+- docker
+
+- docker login --username ${DOCKERHUB_USERNAME} --password ${DOCKERHUB_PASSWORD}
+
+- docker push ${IMAGE_NAME}
+
+services:
+
+- docker
+
+caches:
+
+- docker

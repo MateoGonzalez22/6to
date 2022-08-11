@@ -20,14 +20,20 @@ Funciones:
     Control: Dar seguimiento a las actividades para garantizar que se logren conforme a lo planeado
 
 
+
+Integrantes: Gonzalez, Avichelli, Lopez, Tapia, Trias 
+
+
 McDonalds: 
 
-Planeacion: Ser la cadena de comida rapida que mas vende, disminuir costos
+Planeacion: 
+
+    Objetivo: Ser la cadena de comida rapida que mas vende, obtener mas ganancias
 
     Estrategias:
     - Poner sucursales en lugares muy transitados (shoppings, avenidas)
     - Poner ofertas llamativas (combos)
-    - Disminuir cantidades, de forma disimulada 
+    - Disminuir costos
 
 
 Organizacion: 
@@ -46,3 +52,10 @@ Control:
 
     - Verificar el correcto funcionamiento de las herramientas que se utilizan
     - Levar el seguimiento de las ganancas y perdidas de la franquicia
+
+
+
+
+
+Gerente: Un generente es alguien que coordina y supervisa el trabajo de otras personas para que se logren
+los objetivos de la organizacion 
